@@ -3,9 +3,34 @@ html {
   display:flex;
   justify-content:center;
   align-items:center;
+  background: url('molly_bath.jpg'), linear-gradient(to top right, blue, red);
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 body {
   text-align: center;
+}
+video:not(:fullscreen) {
+  outline: none;
+  transition: transform .1s; 
+  border-radius: 1em;
+  width: 500px;
+  border: 5px solid white;
+}
+h1 {
+  animation: fade 2s
+}
+
+@keyframes fade {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
