@@ -1,14 +1,17 @@
 const video = document.querySelector('video')
 const greeting = document.getElementById('greeting')
 const greeting2 = document.getElementById('greeting2')
+const funky = document.getElementById('funky')
 video.addEventListener('play', function () {
   greeting.innerText = 'fuck you'
   greeting2.innerText = 'no bragle here'
+  funky.innerText = ' '
 })
 
 video.addEventListener('pause', function () {
   greeting.innerText = 'bragle is soooooooooooooooo epic'
   greeting2.innerText = 'trollar'
+  funky.innerText = ' '
 })
 
 
@@ -17,6 +20,11 @@ video.addEventListener('pause', function () {
 const context = new AudioContext()
 const videoSource = context.createMediaElementSource(video)
 const analyser = context.createAnalyser() //we create an analyser
+function mollarbath() {
+  const mollar = 'e'
+  console.log(mollar)
+}
+
 analyser.smoothingTimeConstant = .9
 analyser.fftSize = 512 //the total samples are half the fft size.
 videoSource.connect(analyser)

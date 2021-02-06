@@ -1,0 +1,24 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "free moller bath working 2020",
+  "short_name": "moller bath",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "https://auxnos.github.io/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "real",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "url": "https://auxnos.github.io",
+  "generated": true
+}

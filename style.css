@@ -12,6 +12,15 @@ html {
 }
 
 
+h2 {
+  font-size: 35vmin;
+  animation: fadeout 2s 2s forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
 body {
   text-align: center;
 }
@@ -25,6 +34,16 @@ video:not(:fullscreen) {
 h1 {
   animation: fade 2s
 }
+
+@keyframes fadeout {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+
 
 @keyframes fade {
   from {
